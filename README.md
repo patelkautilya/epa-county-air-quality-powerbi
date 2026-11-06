@@ -1,6 +1,14 @@
 # County air quality | EPA AirData and Power BI
 
-**Status:** validated 2024–2025 county-year dataset; interactive Power BI report in preparation.
+**Status:** validated 2024–2025 county-year dataset and two-page Power BI report.
+
+[Power BI report (sign-in/access may be required)](https://app.powerbi.com/groups/e6426da3-9b36-4519-acf1-2434daa552ae/reports/c9da0c3a-5f6d-428f-8d30-ee96e9470cf4/4f22284d93d2306760c3?experience=power-bi) · [Two-page PDF](epa-county-aqi-report.pdf) · [Findings](FINDINGS.md)
+
+![AQI overview dashboard](overview.png)
+
+The **AQI overview** offers a 101+ AQI county-day KPI, distinct monitored-county KPI, year tile and state dropdown, a year/category composition chart, and a state comparison. Selecting a year or state updates the displayed measures. **County detail** is a sortable county-year table with observed days, 101+ AQI days, observed-day share and monitoring coverage. [View the second page](county-detail.png).
+
+The PDF is a static export of the report's default, all-years view. Its rounded KPI card shows 7K; the validated exact total is **7,115** county-days at AQI 101+ across both years. County-days are summed over counties and may occur on the same calendar day; they are not unique U.S. days.
 
 ## Question
 
@@ -28,4 +36,6 @@ The script verifies that the six AQI-category counts and the main-pollutant day 
 | `epa_county_aqi_2024_2025.csv` | Curated Power BI source |
 | `validation_summary.json` | Source hashes, coverage, and reconciliation |
 | `FINDINGS.md` | Descriptive results and interpretation limits |
+| `epa-county-aqi-report.pdf` | Two-page static Power BI export |
+| `overview.png`, `county-detail.png` | Dashboard and table previews |
 
